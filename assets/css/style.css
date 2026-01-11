@@ -5,7 +5,36 @@
 
 @media (max-width: 600px) {
   #intro .content {
-    margin-top: 16vh !important; /* slightly less on small screens */
+    margin-top: 10vh !important; /* optimized for mobile screens */
+  }
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Better readability on mobile */
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    margin: -20px;
+    margin-left: -5px;
+  }
+  
+  .icon-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    margin: 3px;
+  }
+  
+  .readme, .contactme {
+    padding: 10px 25px;
+    font-size: 14px;
+    margin: 5px;
+    display: inline-block;
+    width: auto;
   }
 }
 .profile-pic {
@@ -663,40 +692,94 @@ small {
 
 @media (max-width: 600px) {
   h2 {
-    font-size: 22px;
-    line-height: 200%;
-    margin: 30px 0 0;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 20px 0 0;
   }
+  
+  h5 {
+    font-size: 18px;
+    line-height: 140%;
+  }
+  
   #intro.section .container *:not(span) {
     padding: 0;
   }
+  
+  #intro.section .content {
+    margin-left: 5% !important;
+    padding: 0 15px;
+  }
+  
   .card .card-content .card-title {
     font-size: 20px;
     line-height: 24px;
   }
+  
+  .card.medium {
+    margin-bottom: 30px;
+  }
+  
+  .card.medium .card-image {
+    height: 200px;
+  }
+  
   #experience span.card-title {
     text-align: center;
     display: block;
   }
+  
   #experience span.card-title a {
     margin: 0;
   }
+  
   i.mdi-navigation-close.right {
     position: relative;
     bottom: 15px;
   }
+  
   #contact a:not(.btn-floating) {
     text-align: center;
     display: block;
     left: initial;
     bottom: initial;
+    font-size: 16px;
+    word-break: break-all;
   }
+  
   #contact a.btn-floating.btn-large {
     display: block;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 15px;
   }
+  
   #intro.section {
     background-position-x: 30%;
+  }
+  
+  /* Better spacing for mobile sections */
+  .section {
+    padding-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* Touch-friendly spacing */
+  .card ul li {
+    padding: 5px 0;
+    line-height: 160%;
+  }
+  
+  /* Skills section mobile optimization */
+  #skills .col.s4.m2 {
+    margin-bottom: 20px;
+  }
+  
+  #skills .col img.responsive-img {
+    max-height: 70px;
   }
 }
